@@ -22,3 +22,5 @@ COPY . /app
 ENTRYPOINT ["bash", "start.sh"]
 
 
+
+
