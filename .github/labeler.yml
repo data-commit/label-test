@@ -1,8 +1,18 @@
+# General labels based on branch names
 patch:
-    - head-branch: ['*patch*']
-    
-    minor:
-    - head-branch: ['*minor*']
-    
-    major:
-    - head-branch: ['*major*']
+  - head-branch: ['*patch*']
+
+minor:
+  - head-branch: ['*minor*']
+
+major:
+  - head-branch: ['*major*']
+
+# Dockerfile-specific labels
+dockerfile-change:
+  - changed-files:
+    - any-glob-to-any-file: 'Dockerfile*'
+
+alpine-dockerfile-change:
+  - changed-files:
+    - any-glob-to-any-file: 'alpine/Dockerfile'
