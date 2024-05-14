@@ -1,0 +1,7 @@
+dockerfile-change:
+- changed-files:
+  - any-glob-to-any-file: 'Dockerfile*'
+
+alpine-dockerfile-change:
+- changed-files:
+  - any-glob-to-any-file: 'alpine/Dockerfile'
