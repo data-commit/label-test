@@ -8,8 +8,19 @@ jobs:
     permissions:
       contents: read
       pull-requests: write
+      
     runs-on: ubuntu-latest
     steps:
+
+    - name: checkout code
+      uses:   actions/checkout@v4
+      
+    - name: Check .github directory
+      run: |
+        ls -al .github
+        cat .github/labeler.yml   
+
+
     - uses: actions/labeler@v5
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
