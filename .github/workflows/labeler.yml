@@ -1,0 +1,8 @@
+patch:
+    - head-branch: ['*patch*']
+    
+    minor:
+    - head-branch: ['*minor*']
+    
+    major:
+    - head-branch: ['*major*']
