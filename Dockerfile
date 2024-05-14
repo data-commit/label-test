@@ -20,3 +20,7 @@ COPY . /app
 
 # Set the entrypoint command
 ENTRYPOINT ["bash", "start.sh"]
+
+
+
+
