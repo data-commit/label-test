@@ -1,5 +1,5 @@
 # Use the official Alpine base image
-FROM alpine:3.17
+FROM alpine:3.18
 
 # Set the maintainer label
 LABEL maintainer="Your Name <your.email@example.com>"
